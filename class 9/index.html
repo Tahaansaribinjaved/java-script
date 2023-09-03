@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: rgb(131, 230, 205);">
+
+    <div>
+        <div><input readonly type="text" name="" id="inp"></div>
+        <div>
+            <button onclick="clr()" type="button" class="btn btn-outline-danger">C</button>
+            <button onclick="d()" type="button" class="btn btn-outline-warning">Delete</button>
+            <button onclick="db('/')" type="button" class="btn btn-outline-success">/</button>
+           
+            <!-- <i class="fa-solid fa-trash-undo fa-beat"></i> -->
+        </div>
+        <!-- <br> -->
+        <div>
+            <button onclick="db(7)" type="button" class="btn btn-outline-primary"> 7 </button>
+            <button onclick="db(8)" type="button" class="btn btn-outline-secondary"> 8 </button>
+            <button onclick="db(9)" type="button" class="btn btn-outline-success">9</button>
+            <button onclick="db('*')" type="button" class="btn btn-outline-danger">x</button>
+
+        </div>
+        <div>
+            <button onclick="db(4)" type="button" class="btn btn-outline-warning">4</button>
+            <button onclick="db(5)" type="button" class="btn btn-outline-info">5</button>
+            <button onclick="db(6)" type="button" class="btn btn-outline-light">6</button>
+            <button onclick="db('-')" type="button" class="btn btn-outline-dark">-</button>
+        </div>
+        <!-- <br> -->
+        <div>
+            <button onclick="db(1)" type="button" class="btn btn-outline-primary"> 1 </button>
+            <button onclick="db(2)" type="button" class="btn btn-outline-secondary"> 2 </button>
+            <button onclick="db(3)" type="button" class="btn btn-outline-success">3</button>
+            <button onclick="db('+')" type="button" class="btn btn-outline-danger">+</button>
+
+        </div>
+        <div>
+            <button onclick="db('%')" type="button" class="btn btn-outline-warning">%</button>
+            <button onclick="db(0)" type="button" class="btn btn-outline-info">0</button>
+            <button onclick="db('.')" type="button" class="btn btn-outline-light">.</button>
+            <button onclick="eq()" type="button" class="btn btn-outline-dark">=</button>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
