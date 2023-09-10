@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
 </head>
-<body>
-    <div class="container px-4 text-center">
 
-        <h1>SIGN UP</h1>
-        <input type="text" name="" id="UP"><br><br>
-        <input type="password" name="" id="upp"><br><br>
-        
-        <button onclick="signup()">SIGN UP </button>
-        
+<body>
+
+    <div class="container px-4 text-center">
+        <div class="signtext">
+            <h1 class="FH"><b> SIGN UP FORM</b></h1>
+        </div>
+        <div class="main">
+
+            <div class="form">
+
+                <!-- <form action="./"> -->
+
+                    <h3 style="margin-bottom: 20px;">Hello, User!</h3>
+                    
+                
+                    <input class="user" required type="text" name="" placeholder=" Name" id="name">
+                    <!-- <i class="fa fa-user-circle" aria-hidden="true"></i> -->
+                    <br><br>
+                    <input class="email " required type="email" name="" placeholder="E-mail" id="UP"><br><br>
+                    <input class="pass" required maxlength="12" minlength="6" placeholder="password" type="password"
+                        name="" id="upp"><br><br>
+                    <div style="padding: 0px;"><input type="checkbox" name="" id=""><label for=""> I 've read and aggre to <a href="#"
+                                style="text-decoration: none;">Term and condition</a></label>
+                    </div><br>
+                    <button class="bt" onclick="signup()">CREATE ACCOUNT </button>
+                    <p class="p">alrearedy have an account ? <a style="text-decoration: none;" href="./index1.html">SIGN IN</a></p>
+                <!-- </form> -->
+            </div>
+            <div class="img">
+                <h3 >Glad too see you !</h3>
+                <p>Hello User! wellcome to  my sign up website </p>
+            </div>
+        </div>
     </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
 
 </body>
+
 </html>

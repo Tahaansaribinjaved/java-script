@@ -27,6 +27,9 @@ function signup(){
     localStorage.setItem('Email',email)
     localStorage.setItem('Password',uppass)
     location.href = './index1.html'
+    var name = document.getElementById('name').value
+    name = document.getElementById('h3')
+
 }
 
 function signin(){
@@ -40,6 +43,7 @@ function signin(){
         location.href = './index.html'
     }
 }
+
 
 
 
