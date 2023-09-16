@@ -9,8 +9,8 @@
 
 // }
 
-function sum(a = 2, b=3) {
-    return a + b
+function sum(a = 2, b=3 , d = 4 ) {
+    return a + b + d
 }
 
 var t = +prompt('Enter value 1')
