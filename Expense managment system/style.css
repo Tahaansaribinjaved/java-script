@@ -1,0 +1,44 @@
+.head{
+    color: blue;
+    text-align: center;
+} 
+.a{
+    width: 20% !important;
+} 
+.main{
+    margin: 25px;
+}
+.inp{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.b{
+    margin: 50px;
+}
+.total{
+    text-align: center;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end; */
+    /* align-self: ; */
+    /* position: relative; */
+    position: absolute;
+        bottom: 0;
+        left: 40vw;
+        right: 40vw;
+        /* display: flex; */
+        /* flex-direction: column; */
+        text-align: left;
+        text-transform: uppercase;
+        /* justify-content: center; */
+        font-weight: bold;
+        /* color: white; */
+        /* border: 2px solid orange; */
+        width: 30vw;
+        padding: 10px;
+        /* height: 5vh; */
+        /* flex-wrap: wrap; */
+}
