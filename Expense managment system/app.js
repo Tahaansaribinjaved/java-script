@@ -6,7 +6,6 @@ var getTr = document.getElementById('td')//tr ko get karlia
 var gettotal = document.getElementById('total')
 var tAmount = 0;
 
-var tda = document.createElement('td')
 function addExpense() {
     var getTitle = document.getElementById('title')
     var getAmount = document.getElementById('amount')
@@ -17,6 +16,8 @@ function addExpense() {
     var tdt = document.createElement('td')
     tdt.setAttribute('class', "table-light ntd")
     tdt.textContent = getTitle.value
+
+    var tda = document.createElement('td') 
 
     tda.setAttribute('class', "table-light ntd")
     tda.textContent = getAmount.value
@@ -49,6 +50,7 @@ function addExpense() {
     action.appendChild(editbtn)
 
     editbtn.setAttribute('onclick', 'editfunc(this)')
+    
     deletebtn.setAttribute('class', 'btn btn-danger')
     editbtn.setAttribute('class', 'btn btn-warning ')
     tr.appendChild(tdt)
@@ -77,6 +79,7 @@ function addExpense() {
     getAmount.value = ''
     getTitle.value = ''
     getDate.value = ''
+    var total = tAmount +tda
 
 
 }
@@ -87,10 +90,49 @@ function deleteAll() {
 }
 function del(e) {
     e.parentNode.parentNode.remove()
-
-
+    
+    
 }
 function editfunc(e) {
+    e.setAttribute('data-bs-target','#exampleModai') 
+    e.setAttribute('data-bs-toggle','modal')
+    e.setAttribute('data-bs-whatever','@mdo')
+ var a = document.getElementById('titleu')
+ var b = document.getElementById('amountu')
+ var c = document.getElementById('dateu')
+                
+   e.parentNode.parentNode.firstChild.textContent = a
+   e.parentNode.parentNode.children[1].textContent = b
+   e.parentNode.parentNode.children[2].textContent = c
+    
+    // var a = prompt('enter title',e.parentNode.parentNode.firstChild.textContent)
+    // var b  = +prompt('Enter Amount ...',e.parentNode.parentNode.children[1].textContent)
+    
+
+
+
+
+
+
+
+
+
+    //   var childre  = getTr.children[0].children[1]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // e.parentNode.parentNode.fi
     // const { value: text }
     //     = await Swal.fire
     //         (
@@ -107,11 +149,9 @@ function editfunc(e) {
     // if (text) {
     //     Swal.fire(text)
     // }
-    // var childre  = getTr.children[0].children[1]
     //  e.parvar a =  prompt('Enter value fdgds',e.parentNode.parentNode.firstChild.textContent)
     // var b =  prompt('Enter value fdfdgf',childre.textContent)
     // var c =  prompt('Enter value ghg',e.parentNode.parentNode.thirdChild.textContent)
-    //   e.parentNode.parentNode.firstChild.textContent = a
     // //   e.parentNode.parentNode.secondChild.textContent = b
     // //  entNode.parentNode.thirdChildChild.textContent = c
 }
