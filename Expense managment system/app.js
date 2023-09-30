@@ -4,41 +4,30 @@
 
 var getTr = document.getElementById('td')//tr ko get karlia
 var gettotal = document.getElementById('total')
-var tAmount = 0;
 
+var tAmount = 0;
+// tAmount = gettotal.innerText
 function addExpense() {
     var getTitle = document.getElementById('title')
     var getAmount = document.getElementById('amount')
     var getDate = document.getElementById('date')
     var tr = document.createElement('tr')
-
-
+    var amountal = parseInt(getAmount.value);
+    
+    
     var tdt = document.createElement('td')
     tdt.setAttribute('class', "table-light ntd")
     tdt.textContent = getTitle.value
-
-    var tda = document.createElement('td') 
-
+    
+    var tda = document.createElement('td')
     tda.setAttribute('class', "table-light ntd")
     tda.textContent = getAmount.value
-
-    // var ta = getAmount.value
-    // var ta = parseInt(getAmount.value);
-    // getAmount += tda.value
-
-
-
-
-
+    
     var tdd = document.createElement('td')
     tdd.setAttribute('class', "table-light ntd")
     tdd.textContent = getDate.value;
-
-
-
+    
     var action = document.createElement('td')
-
-
     var deletebtn = document.createElement('button')
     var deletebtntext = document.createTextNode('Delete')
     deletebtn.appendChild(deletebtntext)
@@ -48,110 +37,57 @@ function addExpense() {
     var editbtntext = document.createTextNode('Update')
     editbtn.appendChild(editbtntext)
     action.appendChild(editbtn)
-
     editbtn.setAttribute('onclick', 'editfunc(this)')
-    
     deletebtn.setAttribute('class', 'btn btn-danger')
     editbtn.setAttribute('class', 'btn btn-warning ')
     tr.appendChild(tdt)
     tr.appendChild(tda)
     tr.appendChild(tdd)
     tr.appendChild(action)
-
-
+    
+    
     getTr.appendChild(tr)
-    var value1 = getTr.appendChild.value
-    if (getTitle.value == '' && getAmount.value == '' && getDate.value == '') {
-        // alert('Please Write')
+    if (getTitle.value == '' || getAmount.value == '' || getDate.value == '') {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'You did not write, please write  ',
         })
         tr.style.display = "none"
-        // document.createElement('tr') = false
-        // document.createElement('td') = false
-        // document.createElement('td') = false
-        // document.createElement('td') = false
-        // tdd.createElement
-
+        
     }
     getAmount.value = ''
     getTitle.value = ''
     getDate.value = ''
-    var total = tAmount +tda
-
+    tAmount += amountal
+    gettotal.textContent = tAmount 
+    // var tta=  tda.textContent + tAmount
+    // console.log(tta)
+    
+//     for(var i = 0 ; i >tr.lenght ; i++  ){
+// }
 
 }
 
 function deleteAll() {
     getTr.innerHTML = ''
-    // alert('hello')
 }
 function del(e) {
     e.parentNode.parentNode.remove()
-    
-    
 }
+
+
 function editfunc(e) {
-    e.setAttribute('data-bs-target','#exampleModai') 
-    e.setAttribute('data-bs-toggle','modal')
-    e.setAttribute('data-bs-whatever','@mdo')
- var a = document.getElementById('titleu')
- var b = document.getElementById('amountu')
- var c = document.getElementById('dateu')
-                
-   e.parentNode.parentNode.firstChild.textContent = a
-   e.parentNode.parentNode.children[1].textContent = b
-   e.parentNode.parentNode.children[2].textContent = c
-    
-    // var a = prompt('enter title',e.parentNode.parentNode.firstChild.textContent)
-    // var b  = +prompt('Enter Amount ...',e.parentNode.parentNode.children[1].textContent)
-    
+    var a = prompt('Enter update title', e.parentNode.parentNode.firstChild.textContent);
+    var b = +prompt('Enter update amount', e.parentNode.parentNode.children[1].textContent);
+    var newValue = parseInt(b);
+    var oldValue = parseInt(e.parentNode.parentNode.children[1].textContent);
 
+    e.parentNode.parentNode.firstChild.textContent = a;
+    e.parentNode.parentNode.children[1].textContent = b;
 
-
-
-
-
-
-
-
-    //   var childre  = getTr.children[0].children[1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // e.parentNode.parentNode.fi
-    // const { value: text }
-    //     = await Swal.fire
-    //         (
-    //             {
-    //                 input: 'textarea',
-    //                 inputLabel: 'Message',
-    //                 inputPlaceholder: 'Type your message here...',
-    //                 inputAttributes: {
-    //                     'aria-label': 'Type your message here'
-    //                 },
-    //                 showCancelButton: true
-    //             })
-
-    // if (text) {
-    //     Swal.fire(text)
-    // }
-    //  e.parvar a =  prompt('Enter value fdgds',e.parentNode.parentNode.firstChild.textContent)
-    // var b =  prompt('Enter value fdfdgf',childre.textContent)
-    // var c =  prompt('Enter value ghg',e.parentNode.parentNode.thirdChild.textContent)
-    // //   e.parentNode.parentNode.secondChild.textContent = b
-    // //  entNode.parentNode.thirdChildChild.textContent = c
+    tAmount = tAmount - oldValue + newValue;
+    gettotal.textContent = tAmount;
 }
+
+

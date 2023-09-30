@@ -1,3 +1,4 @@
+
 .head{
     color: blue;
     text-align: center;
@@ -11,8 +12,19 @@
 .inp{
     display: flex;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 50px;
+}
+.balance{
+    /* margin: 0; */
+    padding-top: 20px;
+    text-align: center;
+    /* border: 2px solid blue; */
+}
+#total{
+    line-height: 20px;
+    font-size: xx-large;
+    text-align: center;
 }
 .b{
     margin: 50px;
@@ -26,7 +38,7 @@
     /* align-self: ; */
     /* position: relative; */
     position: absolute;
-        bottom: 0;
+        bottom: 0; 
         left: 40vw;
         right: 40vw;
         /* display: flex; */
