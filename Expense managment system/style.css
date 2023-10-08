@@ -1,9 +1,16 @@
+/* body{ */
+    /* background-color: aqua; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */ 
+    /* background-image:  ;  */
+    /* background-color: ; */
+/* } */
 
 .head{
     color: blue;
     text-align: center;
 } 
-.a{
+.a{ 
     width: 20% !important;
 } 
 .main{
@@ -53,4 +60,94 @@
         padding: 10px;
         /* height: 5vh; */
         /* flex-wrap: wrap; */
+}
+body{
+    /* background-color: black; */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA_0H03f9SAD7xRhoEhKzbb0JVhpR-ZluMGQ&usqp=CAU');
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+/* { */
+    /* margin: 30px; */
+    /* background-color: rgba(115, 205, 238, 0.711); */
+    /* color: white  ; */
+
+/* } */
+.submain{
+    /* height: 30vh; */
+    text-align: center;
+    /* border: 2px hidden blue; */
+    /* padding: 10px; */
+    /* margin:  10px 20px   ; */
+    /* background-color:  rgb(33, 29, 29); */
+}
+.ub{
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    width: 35vw;
+    /* font-size: large; */
+    color: white;
+    background-color: blue;
+    border: 10px double white;
+    border-radius: 23px;
+    font-size: x-large;
+}.ib{
+    height: 10vh;
+
+    margin: 0;
+    padding: 0;
+    width: 35vw;
+
+    /* font-size: large; */
+    color: black;
+    background-color: rgba(118, 115, 115, 0.557);
+    border: 10px double black;
+    border-radius: 23px;
+    font-size: x-large;
+}
+.btn{
+    width: 90vw auto;
+ 
+    /* height: ; */
+}
+.m{
+    margin-top: 40px;
+}
+.semail{
+    /* margin-top: 20px; */
+    padding: 0;
+    height: 8vh;
+    width: 70vw;
+    font-size: x-large;
+    background-color: rgb(49, 158, 235);
+    color: white;
+    border: 2px solid  rgb(49, 158, 235);
+    border-radius: 16px;
+}
+.spass{
+    height: 8vh;
+    font-size: x-large;
+
+    padding: 0;
+    width: 70vw;
+    background-color: rgb(49, 158, 235);
+    color: white;
+    border: 2px solid  rgb(49, 158, 235);
+    border-radius: 16px;
+
+}
+.ubd{
+    margin: 15px;
+    /* text-decoration:solid; */
+    text-shadow: 2px 2px red ;
+    /* padding: 10px; */
+    width: 35vw;
+height: 10vh;
+    font-size: xx-large;
+    color: white;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 56px;
 }

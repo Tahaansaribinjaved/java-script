@@ -1,0 +1,80 @@
+/* body{
+    background: black;
+} */
+
+body{
+    /* background-color: black; */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA_0H03f9SAD7xRhoEhKzbb0JVhpR-ZluMGQ&usqp=CAU');
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+.main{
+    /* margin: 30px; */
+    /* background-color: rgba(115, 205, 238, 0.711); */
+    /* color: white  ; */
+
+}
+.submain{
+    text-align: center;
+    padding: 10px;
+    margin:  10px 20px   ;
+    /* background-color:  rgb(33, 29, 29); */
+}
+.ub{
+    margin: 0;
+    padding: 0;
+    width: 35vw;
+    /* font-size: large; */
+    color: white;
+    background-color: blue;
+    border: 2px solid blue;
+    /* border-radius: 12px; */
+}.ib{
+    margin: 0;
+    padding: 0;
+    width: 35vw;
+
+    /* font-size: large; */
+    color: white;
+    background-color: rgba(118, 115, 115, 0.557);
+    border: 2px solid rgba(124, 119, 119, 0.564);
+    /* border-radius: 12px; */
+}
+.btn{
+    width: 90vw auto;
+
+    /* height: ; */
+}
+.m{
+    margin-top: 20px;
+}
+.semail{
+    /* margin-top: 20px; */
+    padding: 0;
+    width: 70vw;
+    background-color: rgb(49, 158, 235);
+    color: white;
+    border: 2px solid  rgb(49, 158, 235);
+    border-radius: 6px;
+}
+.spass{
+    padding: 0;
+    width: 70vw;
+    background-color: rgb(49, 158, 235);
+    color: white;
+    border: 2px solid  rgb(49, 158, 235);
+    border-radius: 6px;
+
+}
+.ubd{
+    margin: 0;
+    padding: 10px;
+    width: 35vw;
+
+    /* font-size: large; */
+    color: white;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 12px;
+}

@@ -8,15 +8,26 @@ var total = biology + chemistry + physics + math +islamiat
  var percentage = (total/500 ) * 100
 
 var grade ;
+if( name == '' || biology == '' || chemistry == '' ||physics == '' || math == '' ||islamiat == ''){
+    // alert('hello world')
+    Swal.fire({
 
-
-// var userInput = +prompt ("Enter Persentage")
-if(percentage >= 80 && percentage <= 100){
-    grade = "A+"
-    
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!',
+        footer: '<a href="index.html">reminder</a>'
+      })
+    //   location.href = 'index.html' 
 }
-else if( percentage  >= 70 && percentage  <80){
-       grade = "A"
+else{
+
+    // var userInput = +prompt ("Enter Persentage")
+    if(percentage >= 80 && percentage <= 100){
+        grade = "A+"
+        
+    }
+    else if( percentage  >= 70 && percentage  <80){
+        grade = "A"
     }else if( percentage  >= 60 && percentage  <70){
         grade = "B"
     }else if( percentage  >= 50 && percentage  <60){
@@ -25,14 +36,15 @@ else if( percentage  >= 70 && percentage  <80){
         grade = "D"
     }else if( percentage  > 100  ){
         percentage = "Invalid percentage"
-    // document.write ("Invalid percentage")
-    // a === 0
-    
+        // document.write ("Invalid percentage")
+        // a === 0
+        
 }
 else {
     grade = "Fail"
 }
-    document.write(
-            "<table border= '1px' text-align='center' > " + "<tr>"+ "<th>"+"Name" + "</th>" +"<td>"+ name +"</td>"+"</tr>"+ "<tr>"+ "<th>"+"Biology" + "</th>" +"<td>"+ biology +"</td>"+"</tr>"+ "<tr>"+ "<th>"+"Chemistry" + "</th>" +"<td>"+ chemistry +"</td>"+"</tr>"+ "<tr>"+ "<th>"+"Physics" + "</th>" +"<td>"+ physics +"</td>"+"</tr>"+ "<tr>"+ "<th>"+"Math" + "</th>" +"<td>"+ math +"</td>"+"</tr>"+ "<tr>"+ "<th>"+"Islamiat" + "</th>" +"<td>"+ islamiat +"</td>"+"</tr>"+ "<tr>"+ "<th>"+"Total" + "</th>" +"<td>"+ total +"</td>"+"</tr>"+ "<tr>"+ "<th>"+"Percentage" + "</th>" +"<td>"+ percentage +"</td>"+"</tr>" + "<tr>"+ "<th>"+"Grade" + "</th>" +"<td>"+ grade +"</td>"+"</tr>"  +"</table>"
-      )
-   
+document.write(
+    "<table border= '1px' text-align='center' > " + "<tr>"+ "<th>"+"Name" + "</th>" +"<td>"+ name +"</td>"+"</tr>"+ "<tr>"+ "<th>"+"Biology" + "</th>" +"<td>"+ biology +"</td>"+"</tr>"+ "<tr>"+ "<th>"+"Chemistry" + "</th>" +"<td>"+ chemistry +"</td>"+"</tr>"+ "<tr>"+ "<th>"+"Physics" + "</th>" +"<td>"+ physics +"</td>"+"</tr>"+ "<tr>"+ "<th>"+"Math" + "</th>" +"<td>"+ math +"</td>"+"</tr>"+ "<tr>"+ "<th>"+"Islamiat" + "</th>" +"<td>"+ islamiat +"</td>"+"</tr>"+ "<tr>"+ "<th>"+"Total" + "</th>" +"<td>"+ total +"</td>"+"</tr>"+ "<tr>"+ "<th>"+"Percentage" + "</th>" +"<td>"+ percentage +"</td>"+"</tr>" + "<tr>"+ "<th>"+"Grade" + "</th>" +"<td>"+ grade +"</td>"+"</tr>"  +"</table>"
+    )
+    
+}
