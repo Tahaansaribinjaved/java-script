@@ -1,18 +1,22 @@
-// var userInp = prompt('Enter city name')
-// var arr = ['karachi', 'lahore', 'islamabad', 'peshawar', 'quetta']
-// var match = false
+var userInp = prompt('Enter city name')
+var f = userInp[0].toUpperCase()
+var l = userInp.slice(1).toLowerCase()
+var res = f + l
 
-// for (var i = 0; i < arr.length; i++) {
-//     if (userInp == arr[i]) {
-//         match = true
-//         alert('city found')
-//         break
-//     }
-// }
+var arr = ['Karachi', 'Lahore', 'Islamabad', 'Peshawar', 'Quetta']
+var match = false
 
-// if(match == false){
-//     alert('city not found')
-// }
+for (var i = 0; i < arr.length; i++) {
+    if (res == arr[i]) {
+        match = true
+        alert('city found')
+        break
+    }
+}
+
+if(match == false){
+    alert('city not found')
+}
 
 
 // if(userInp ==) 
@@ -31,14 +35,14 @@
 
 
 
-for (var i = 1; i < 100; i = i + 10) {
-    for (var j = i; j < i + 10; j++){
-        document.write(j+" ")
+// for (var i = 1; i < 100; i = i + 10) {
+//     for (var j = i; j < i + 10; j++){
+//         document.write(j+" ")
 
-    }
-document.write("<br>")
+//     }
+// document.write("<br>")
         // document.write(i, '<br>')
-}
+// }
 
 
 
